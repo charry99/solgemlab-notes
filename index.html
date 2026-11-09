@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assetrix, in plain words — a participant's page</title>
+<style>
+  body { font-family: Georgia, serif; line-height: 1.7; max-width: 640px; margin: 2rem auto; padding: 0 1.2rem; color: #1a1a1a; }
+  h1 { font-size: 1.8rem; line-height: 1.3; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .notice { background: #f4f4f0; border-left: 4px solid #555; padding: 0.8rem 1rem; font-size: 0.95rem; }
+  .tag { font-size: 0.95rem; color: #555; }
+  footer { margin-top: 2.5rem; font-size: 0.9rem; color: #555; border-top: 1px solid #ddd; padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<h1>Assetrix, in plain words</h1>
+
+<p class="notice">This is a participant's page, written for the Assetrix Early Birds programme. It is not the official site of the project. The official site is <a href="https://assetrix.org/" rel="sponsored">assetrix.org</a> — read it before you believe anything here.</p>
+
+<p class="tag">#AssetrixEarlyBirds</p>
+
+<p>Assetrix is a protocol coming to Arbitrum One. It has not deployed yet: there is no token to buy and no mainnet contract. This page explains how it is meant to work, in plain words, from the project's own documents.</p>
+
+<h2>The mint price</h2>
+
+<p>You deposit a stablecoin — USDT, USDC or DAI at launch — and open a position. In return you receive ASTRX. The contract sets the mint price of new tokens, and that price only ever rises. Every token issued pushes it one notch up, and no notch ever comes back. Your position locks in the mint price you entered at.</p>
+
+<p>In Phase 1 the mint price follows a published curve up to a $200 ceiling. Holders can vote to move to Phase 2 early, where the mint price grows with time instead — between 5.6% and 161.8% a year, steered by vote or left to an automatic algorithm. Either way, the direction is the same: up.</p>
+
+<h2>The corridor</h2>
+
+<p>The market decides what ASTRX trades at, and that price sits inside a corridor. The floor of the corridor is the backing per token — the reserve behind each ASTRX. The ceiling is the cost of entry, which keeps rising. The market picks a point in between, and the price can fall inside that corridor. Nothing in the design promises the price only goes up.</p>
+
+<h2>The backing</h2>
+
+<p>Every ASTRX is backed by a share of a reserve: stablecoins at launch, plus assets the community votes in later. The backing per token rises when expensive positions close — the expensive position leaves, its share stays behind, and everyone who remains owns a bigger slice of the same reserve. Transfer and redemption fees flow into the same shared pool, so every trade and every exit quietly adds to the backing of the people who stay.</p>
+
+<p>Holders also set a protection depth: a level below which the backing cannot fall. The community chooses how much of the reserve is locked away from the market's worst days.</p>
+
+<h2>Redemption</h2>
+
+<p>ASTRX is redeemable at any time for a proportional share of the reserve. Redemption is neutral: when someone leaves, the pool shrinks, but the share of the people who stay does not change. Leaving takes nothing from them.</p>
+
+<h2>Voting</h2>
+
+<p>Holders vote by burning tokens. If you close a position above the floor, you earn extra voting credits. Fees, protection depth, growth rate and which currencies are accepted are all voted on, and nobody can rewrite those values against the community's will. The contract is meant to be immutable once deployed, and deployment is planned by March 2027 — the team says plainly that is a target, not a commitment.</p>
+
+<h2>What it is not</h2>
+
+<p>It is not a stablecoin. A position is not a dollar peg — the market price moves inside the corridor. It is a different idea: money whose mint price only rises, backed by a reserve, with the rules written in code.</p>
+
+<footer>
+<p>Written by a participant in the Assetrix Early Birds programme. This is not the official site. The official site is <a href="https://assetrix.org/" rel="sponsored">assetrix.org</a>.</p>
+<p>#AssetrixEarlyBirds</p>
+</footer>
+
+</body>
+</html>
